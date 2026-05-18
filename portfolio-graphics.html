@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTWISH</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #E7E1DB;
+      overflow-x: hidden;
+    }
+
+    .card-shadow {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .main-button {
+      background: linear-gradient(90deg,#8A2E2E 0%, #E6C97A 100%);
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg,#7B7E2F 0%, #D6BC69 100%);
+    }
+
+    .bg-line {
+      position: absolute;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="w-full min-h-screen bg-[#E7E1DB] relative overflow-hidden">
+
+  <!-- HEADER -->
+  <header class="w-full h-[110px] bg-[#9FA66B] flex items-center justify-between px-20 relative z-20">
+
+    <div class="text-white text-[32px] font-extrabold">
+      ART<span class="font-medium">WISH</span>
+    </div>
+
+    <div class="flex items-center gap-10">
+
+      <a href="about.html" class="text-black text-2xl">
+        О нас
+      </a>
+
+      <a href="services.html" class="text-black text-2xl">
+        Портфолио
+      </a>
+
+      <a href="services.html"
+        class="bg-[#8A2E2E] hover:opacity-90 transition px-6 py-3 rounded-xl text-white text-2xl font-bold shadow-lg"
+      >
+        Выбрать услугу
+      </a>
+
+    </div>
+  </header>
+
+  <!-- DECOR -->
+  <img
+    src="images/Vector 0.png"
+    class="bg-line top-[120px] left-0 w-[650px]"
+  >
+
+  <img
+    src="images/vector-pattern-bg2.png.png"
+    class="bg-line top-0 left-0 w-[700px]"
+  >
+
+  <img
+    src="images/vector-pattern-bg3.png.png"
+    class="bg-line top-[600px] right-0 w-[500px]"
+  >
+
+  <!-- HERO -->
+  <section class="relative z-10 px-20 pt-16">
+
+    <h1 class="text-[72px] leading-none font-bold text-black">
+      Портфолио:
+      <span class="italic font-light">
+        графика
+      </span>
+    </h1>
+
+    <div class="flex justify-between items-start mt-10 gap-12">
+
+      <p class="w-[620px] text-[24px] leading-[34px] text-black">
+        В эпоху цифровых технологий особая ценность —
+        остановиться и создать рисунок на бумаге.
+        Линия, рождающаяся из простого касания грифеля,
+        хранит в себе момент, тишину и подлинность творчества
+      </p>
+
+      <a href="order.html"
+        class="main-button w-[620px] h-[72px] rounded-xl text-white text-[32px] font-bold shadow-lg flex items-center justify-center"
+      >
+        Хочу рисунок!
+      </a>
+
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="relative z-10 px-20 mt-16">
+
+    <div class="grid grid-cols-3 gap-8">
+
+      <!-- CARD 1 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Image-12.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Эскиз
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Image-13.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Портрет
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Image-14.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Учебный рисунок
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Image-15.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Технический рисунок
+        </div>
+
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Image-16.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Композиция
+        </div>
+
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="bg-[#EFEFEF] rounded-[20px] overflow-hidden card-shadow">
+
+        <img
+          src="images/Imageпис.png"
+          class="w-full h-[420px] object-cover"
+        >
+
+        <div class="py-5 text-center text-[24px] text-black">
+          Прочее
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section
+    class="relative z-10 mt-24 bg-[#9FA66B] px-20 py-14 flex items-center justify-between"
+  >
+
+    <h2 class="text-white text-[64px] font-bold">
+      Закажи прямо сейчас!
+    </h2>
+
+    <a href="order.html"
+      class="cta-button w-[520px] h-[72px] rounded-xl text-white text-[32px] font-bold shadow-lg flex items-center justify-center"
+    >
+      Хочу рисунок!
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer
+    class="relative z-10 bg-[#967E64] px-20 py-16 flex justify-between"
+  >
+
+    <div>
+
+      <div class="text-white text-[48px] font-extrabold">
+        ART<span class="font-medium">WISH</span>
+      </div>
+
+      <div class="flex gap-5 mt-10">
+
+        <img src="images/Iconф.png" class="w-6">
+        <img src="images/Iconин.png" class="w-6">
+        <img src="images/Iconю.png" class="w-6">
+        <img src="images/Iconи.png" class="w-6">
+
+      </div>
+
+    </div>
+
+    <div class="flex gap-28">
+
+      <!-- COLUMN -->
+      <div>
+
+        <h3 class="text-black text-xl font-semibold mb-6">
+          Категории
+        </h3>
+
+        <div class="flex flex-col gap-4 text-[#444]">
+
+          <a href="portfolio-graphics.html">Рисунок</a>
+          <a href="portfolio-digital.html">Диджитал</a>
+          <a href="portfolio-painting.html">Живопись</a>
+
+        </div>
+
+      </div>
+
+      <!-- COLUMN -->
+      <div>
+
+        <h3 class="text-black text-xl font-semibold mb-6">
+          Портфолио
+        </h3>
+
+        <div class="flex flex-col gap-4 text-[#444]">
+
+          <a href="portfolio-graphics.html">Рисунок</a>
+          <a href="portfolio-digital.html">Диджитал</a>
+          <a href="portfolio-painting.html">Живопись</a>
+
+        </div>
+
+      </div>
+
+      <!-- COLUMN -->
+      <div>
+
+        <h3 class="text-black text-xl font-semibold mb-6">
+          О нас
+        </h3>
+
+        <div class="flex flex-col gap-4 text-[#444]">
+
+          <a href="about.html">Частые вопросы</a>
+          <a href="about.html">Правила соглашения</a>
+          <a href="about.html">Контакты</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+</html>

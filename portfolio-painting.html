@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTWISH — Портфолио: живопись</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#e7e1db;
+      font-family:'Inter', sans-serif;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+  .container-main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+    /* HEADER */
+
+    header{
+      width:100%;
+      height:110px;
+      background:#9fa66b;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 80px;
+      position:relative;
+      z-index:10;
+    }
+
+    .logo{
+      color:white;
+      font-size:32px;
+      font-weight:800;
+    }
+
+    .logo span{
+      font-weight:500;
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:40px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:black;
+      font-size:24px;
+    }
+
+    .header-btn{
+      background:#8a2e2e;
+      color:white;
+      border:none;
+      border-radius:10px;
+      padding:16px 28px;
+      font-size:24px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero{
+      position:relative;
+      padding:90px 80px 0;
+    }
+
+    .hero h1{
+      font-size:72px;
+      font-weight:800;
+      color:black;
+      margin-bottom:30px;
+    }
+
+    .hero h1 span{
+      font-family:'Caveat', cursive;
+      font-weight:700;
+    }
+
+    .hero-text{
+      width:650px;
+      font-size:22px;
+      line-height:1.4;
+      margin-bottom:40px;
+    }
+
+    .hero-btn{
+      width:620px;
+      height:65px;
+      border:none;
+      border-radius:10px;
+      background:linear-gradient(90deg,#8a2e2e 0%, #edd287 100%);
+      color:white;
+      font-size:28px;
+      font-weight:700;
+      cursor:pointer;
+      text-align:left;
+      padding-left:30px;
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+    }
+
+    /* CARDS */
+
+    .cards{
+      width:1280px;
+      margin:60px auto 0;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:30px;
+      position:relative;
+      z-index:2;
+    }
+
+    .card{
+      background:#f5f5f5;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 0 30px rgba(88,77,65,0.35);
+    }
+
+    .card img{
+      width:100%;
+      height:420px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-title{
+      height:80px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:28px;
+      font-weight:300;
+    }
+
+    /* CTA */
+
+    .cta{
+      width:100%;
+      height:240px;
+      background:#9fa66b;
+      margin-top:120px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 80px;
+    }
+
+    .cta h2{
+      color:white;
+      font-size:64px;
+      font-weight:700;
+    }
+
+    .cta a{
+      width:520px;
+      height:70px;
+      border:none;
+      border-radius:10px;
+      background:linear-gradient(90deg,#6d7428 0%, #edd287 100%);
+      color:white;
+      font-size:30px;
+      font-weight:700;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+
+    /* FOOTER */
+
+    footer{
+      width:100%;
+      background:#967e64;
+      padding:60px 80px;
+      color:white;
+      display:flex;
+      justify-content:space-between;
+      position:relative;
+    }
+
+    .footer-logo{
+      font-size:32px;
+      font-weight:800;
+      margin-bottom:40px;
+    }
+
+    .footer-logo span{
+      font-weight:500;
+    }
+
+    .footer-column{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .footer-column h3{
+      color:black;
+      font-size:18px;
+    }
+
+    .footer-column a{
+      color:#444;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    /* DECOR */
+
+    .vector-top{
+      position:absolute;
+      top:120px;
+      left:0;
+      width:700px;
+      z-index:0;
+      opacity:0.4;
+    }
+
+    .vector-right{
+      position:absolute;
+      top:140px;
+      right:-50px;
+      width:500px;
+      z-index:1;
+    }
+
+    .vector-circle{
+      position:absolute;
+      right:-40px;
+      top:650px;
+      width:550px;
+      z-index:1;
+    }
+
+    .vector-bottom{
+      position:absolute;
+      right:250px;
+      bottom:420px;
+      width:450px;
+      z-index:0;
+      opacity:0.4;
+    }
+
+    .yellow-line{
+      position:absolute;
+      left:-120px;
+      top:170px;
+      width:600px;
+      z-index:0;
+      opacity:0.6;
+    }
+
+    .green-line{
+      position:absolute;
+      left:-100px;
+      bottom:350px;
+      width:350px;
+      z-index:0;
+      opacity:0.5;
+    }
+
+    .palette{
+      position:absolute;
+      left:-50px;
+      top:900px;
+      width:350px;
+      z-index:3;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      ART<span>WISH</span>
+    </div>
+
+    <nav>
+      <a href="about.html">О нас</a>
+      <a href="services.html">Портфолио</a>
+
+      <a href="services.html" class="header-btn">
+        Выбрать услугу
+      </a>
+    </nav>
+
+  </header>
+
+  <!-- DECOR -->
+
+  <img src="images/Vector 0.png" class="vector-top" alt="">
+  <img src="images/vector-pattern-bg2.png.png class="vector-right alt="">
+  <img src="images/vector-pattern-bg3.png.png" class="vector-circle" alt="">
+  <img src="images/vector-pattern-bg2.png.png" class="vector-bottom" alt="">
+  <img src="images/vector-pattern-bg2.png.png" class="yellow-line" alt="">
+  <img src="images/vector-pattern-bg5.png.png" class="green-line" alt="">
+  <img src="images/png-transparent-palette-painting-art-color-painting-watercolor-painting-color-painting (1) 1.png" class="palette" alt="">
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <h1>
+      Портфолио:
+      <span>живопись</span>
+    </h1>
+
+    <p class="hero-text">
+      Наша живопись — это диалог между душой художника и вашим внутренним миром.
+      Каждый мазок кисти наполнен любовью к деталям,
+      каждый цвет подобран так, чтобы будить только самые теплые эмоции.
+    </p>
+
+    <a href="order.html" class="hero-btn">
+      Хочу картину!
+    </a>
+
+  </section>
+
+  <!-- CARDS -->
+
+  <section class="cards">
+
+    <div class="card">
+      <img src="images/Image-6.png" alt="">
+      <div class="card-title">Пейзаж</div>
+    </div>
+
+    <div class="card">
+      <img src="images/Image-7.png" alt="">
+      <div class="card-title">Натюрморт</div>
+    </div>
+
+    <div class="card">
+      <img src="images/Image-8.png" alt="">
+      <div class="card-title">Портрет</div>
+    </div>
+
+    <div class="card">
+      <img src="images/Image-9.png" alt="">
+      <div class="card-title">Станковая живопись</div>
+    </div>
+
+    <div class="card">
+      <img src="images/Image-10.png" alt="">
+      <div class="card-title">Абстракция</div>
+    </div>
+
+    <div class="card">
+      <img src="images/Image-11.png" alt="">
+      <div class="card-title">Прочее</div>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <h2>
+      Закажи прямо сейчас!
+    </h2>
+
+    <a href="order.html">
+      Хочу рисунок!
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div>
+
+      <div class="footer-logo">
+        ART<span>WISH</span>
+      </div>
+
+      <img src="images/Social Icons.png" alt="">
+
+    </div>
+
+    <div class="footer-column">
+      <h3>Категории</h3>
+      <a href="portfolio-graphics.html">Рисунок</a>
+      <a href="portfolio-digital.html">Диджитал</a>
+      <a href="portfolio-painting.html">Живопись</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Портфолио</h3>
+      <a href="portfolio-graphics.html">Рисунок</a>
+      <a href="portfolio-digital.html">Диджитал</a>
+      <a href="portfolio-painting.html">Живопись</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>О нас</h3>
+      <a href="about.html">Частые вопросы</a>
+      <a href="about.html">Правила соглашения</a>
+      <a href="about.html">Контакты</a>
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+</html>

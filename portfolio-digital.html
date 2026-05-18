@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARTWISH — Портфолио Диджитал</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#e7e1db;
+      font-family:'Inter', sans-serif;
+      overflow-x:hidden;
+      color:#000;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    /* ---------------- HEADER ---------------- */
+
+    header{
+      width:100%;
+      height:110px;
+      background:#a2ab6d;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 70px;
+      position:relative;
+      z-index:10;
+    }
+
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:800;
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:40px;
+    }
+
+    nav a{
+      font-size:22px;
+      font-weight:500;
+    }
+
+    .header-btn{
+      background:#982f2f;
+      color:white;
+      padding:18px 32px;
+      border-radius:10px;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    /* ---------------- HERO ---------------- */
+
+    .hero{
+      width:100%;
+      position:relative;
+      padding:90px 70px 40px;
+      overflow:hidden;
+    }
+
+    .hero h1{
+      font-size:72px;
+      display:flex;
+      align-items:center;
+      gap:20px;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1 span{
+      font-family:'Caveat', cursive;
+      font-size:82px;
+      font-weight:700;
+    }
+
+    .hero-text{
+      width:760px;
+      margin-top:30px;
+      font-size:24px;
+      line-height:1.4;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero-btn{
+      position:absolute;
+      top:110px;
+      right:70px;
+      width:620px;
+      height:62px;
+      border:none;
+      border-radius:10px;
+      color:white;
+      font-size:26px;
+      font-weight:700;
+      text-align:left;
+      padding-left:24px;
+      background:linear-gradient(to right,#982f2f,#e5c670);
+      z-index:2;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      text-decoration:none;
+    }
+
+    /* ---------------- DECOR ---------------- */
+
+    .yellow-line{
+      position:absolute;
+      left:-120px;
+      top:120px;
+      width:700px;
+      opacity:0.5;
+      z-index:0;
+    }
+
+    .green-line{
+      position:absolute;
+      right:-250px;
+      top:40px;
+      width:900px;
+      z-index:0;
+      opacity:0.8;
+    }
+
+    .gray-line{
+      position:absolute;
+      right:-150px;
+      bottom:120px;
+      width:800px;
+      opacity:0.4;
+      z-index:0;
+    }
+
+    .palette{
+      position:absolute;
+      left:-40px;
+      top:850px;
+      width:420px;
+      z-index:1;
+    }
+
+    .tablet{
+      position:absolute;
+      left:-20px;
+      top:760px;
+      width:500px;
+      z-index:1;
+    }
+
+    /* ---------------- CARDS ---------------- */
+
+    .cards-section{
+      width:100%;
+      padding:40px 70px 120px;
+      position:relative;
+      z-index:2;
+    }
+
+    .cards-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:28px;
+    }
+
+    .card{
+      background:#f6f6f6;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 0 25px rgba(0,0,0,0.15);
+    }
+
+    .card img{
+      width:100%;
+      height:420px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-title{
+      padding:18px;
+      text-align:center;
+      font-size:28px;
+      font-weight:400;
+    }
+
+    /* ---------------- CTA ---------------- */
+
+    .cta{
+      width:100%;
+      background:#a2ab6d;
+      padding:80px 70px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-top:60px;
+    }
+
+    .cta h2{
+      color:white;
+      font-size:68px;
+      font-weight:700;
+    }
+
+    .cta a{
+      width:500px;
+      height:70px;
+      border:none;
+      border-radius:10px;
+      background:linear-gradient(to right,#7b8127,#e4ca72);
+      color:white;
+      font-size:34px;
+      font-weight:700;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+
+    footer{
+      width:100%;
+      background:#9a8167;
+      padding:70px;
+      color:white;
+    }
+
+    .footer-content{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:40px;
+    }
+
+    .footer-logo{
+      font-size:42px;
+      font-weight:800;
+      margin-bottom:40px;
+    }
+
+    .footer-column{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .footer-column h3{
+      color:black;
+      font-size:22px;
+      margin-bottom:10px;
+    }
+
+    .footer-column a{
+      color:#444;
+      font-size:20px;
+      text-decoration:none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">ARTWISH</div>
+
+    <nav>
+      <a href="about.html">О нас</a>
+      <a href="services.html">Портфолио</a>
+
+      <a href="services.html" class="header-btn">
+        Выбрать услугу
+      </a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <!-- декоративные линии -->
+
+    <img src="images/Vector 0.png" class="yellow-line">
+    <img src="images/vector-pattern-bg4.png.png" class="green-line">
+    <img src="images/vector-pattern-bg2.png.png" class="gray-line">
+
+    <!-- декор -->
+
+    <img src="images/81A4iMHLRmL._AC_SL1500_ 1.png" class="palette">
+    <img src="images/81A4iMHLRmL._AC_SL1500_ 1.png" class="tablet">
+
+    <h1>
+      Портфолио:
+      <span>диджитал</span>
+    </h1>
+
+    <p class="hero-text">
+      Цифровой арт, где каждый мазок — это код,
+      а каждый цвет — отражение смелых экспериментов.
+      Современное искусство на стыке реальности
+      и высоких технологий
+    </p>
+
+    <a href="order.html" class="hero-btn">
+      Хочу арт!
+    </a>
+
+  </section>
+
+  <!-- CARDS -->
+
+  <section class="cards-section">
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <img src="images/Image-18.png">
+        <div class="card-title">Концепт-арт</div>
+      </div>
+
+      <div class="card">
+        <img src="images/Image-19.png">
+        <div class="card-title">Аватар</div>
+      </div>
+
+      <div class="card">
+        <img src="images/Image-20.png">
+        <div class="card-title">Портрет</div>
+      </div>
+
+      <div class="card">
+        <img src="images/Image-21.png">
+        <div class="card-title">Локации к играм</div>
+      </div>
+
+      <div class="card">
+        <img src="images/Image-3.png">
+        <div class="card-title">Абстракция</div>
+      </div>
+
+      <div class="card">
+        <img src="images/Image-22.png">
+        <div class="card-title">Прочее</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <h2>Закажи прямо сейчас!</h2>
+
+    <a href="order.html">
+      Хочу рисунок!
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+
+        <div class="footer-logo">
+          ARTWISH
+        </div>
+
+      </div>
+
+      <div class="footer-column">
+        <h3>Категории</h3>
+        <a href="portfolio-graphics.html">Рисунок</a>
+        <a href="portfolio-digital.html">Диджитал</a>
+        <a href="portfolio-painting.html">Живопись</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Портфолио</h3>
+        <a href="portfolio-graphics.html">Рисунок</a>
+        <a href="portfolio-digital.html">Диджитал</a>
+        <a href="portfolio-painting.html">Живопись</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>О нас</h3>
+        <a href="about.html">Частые вопросы</a>
+        <a href="about.html">Правила соглашения</a>
+        <a href="about.html">Контакты</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

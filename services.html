@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Выбор услуг — ARTWISH</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #E7E1DB;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container-main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+    .vector {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+    }
+
+    .shadow-card {
+      box-shadow: 0 0 30px rgba(88, 77, 65, 0.25);
+    }
+
+    .main-btn {
+      background: linear-gradient(90deg, #636B26 0%, #AE732E 100%);
+    }
+
+    .promo {
+      animation: promoMove 20s linear infinite;
+    }
+
+    @keyframes promoMove {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page min-h-screen">
+
+    <!-- HEADER -->
+
+    <header class="w-full h-[100px] bg-[#9FA66B] flex items-center justify-between px-20 relative z-50">
+
+      <div class="text-white text-[32px] font-extrabold">
+        ART<span class="font-medium">WISH</span>
+      </div>
+
+      <div class="flex items-center gap-10">
+
+        <a href="about.html" class="text-black text-2xl">
+          О нас
+        </a>
+
+        <a href="services.html" class="text-black text-2xl">
+          Портфолио
+        </a>
+
+        <a href="services.html" class="bg-[#8A2E2E] text-white px-6 py-3 rounded-xl text-2xl font-bold shadow-lg">
+          Выбрать услугу
+        </a>
+
+      </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="relative h-[850px] overflow-hidden">
+
+      <!-- BG -->
+
+      <img src="images/snapedit_1779103080811.jpeg" class="absolute inset-0 w-full h-full object-cover">
+
+      <!-- VECTOR -->
+
+      <img src="images/vector-pattern-bg3.png.png" class="vector bottom-[-180px] right-[-40px] w-[700px] opacity-80">
+
+      <!-- PAINT -->
+
+      <div class="hero-title">
+
+    <img src="images/—Pngtree—red paint smear on white_23759478 2.png" class="paint">
+
+    <h1>
+        Выбор услуг
+    </h1>
+
+</div>
+
+      <!-- TEXT -->
+
+      <div class="content absolute top-[280px] left-[590px] text-center">
+
+        <h1 class="font-['Caveat'] text-white text-[110px] leading-none font-bold">
+          Выбор услуг
+        </h1>
+
+        <p class="text-white text-[34px] mt-4">
+          Выберите подходящую для вас категорию
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="content px-20 mt-20 relative">
+
+      <!-- LEFT BIG -->
+
+      <div class="flex gap-8 items-start">
+
+        <!-- DIGITAL -->
+
+        <div class="w-[760px]">
+
+          <div class="bg-[#F7F7F7] rounded-[12px] overflow-hidden shadow-card">
+
+            <img src="images/Image-1.png" class="w-full h-[700px] object-cover">
+
+          </div>
+
+          <div class="mt-6">
+
+            <h2 class="text-[42px] font-medium">
+              Диджитал
+            </h2>
+
+            <p class="text-gray-500 text-[30px] mt-2">
+              Начальная стоимость
+            </p>
+
+            <div class="text-[36px] font-semibold mt-3">
+              от 500₽
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="flex flex-col gap-10 w-[500px]">
+
+          <!-- PAINTING -->
+
+          <div>
+
+            <div class="bg-[#F7F7F7] rounded-[12px] overflow-hidden shadow-card">
+
+              <img src="images/Image.png" class="w-full h-[280px] object-cover">
+
+            </div>
+
+            <div class="mt-5">
+
+              <h2 class="text-[36px] font-medium">
+                Живопись
+              </h2>
+
+              <p class="text-gray-500 text-[26px] mt-2">
+                Начальная стоимость
+              </p>
+
+              <div class="text-[32px] font-semibold mt-3">
+                от 500₽
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- DRAWING -->
+
+          <div>
+
+            <div class="bg-[#F7F7F7] rounded-[12px] overflow-hidden shadow-card">
+
+              <img src="images/Imageв.png" class="w-full h-[280px] object-cover">
+
+            </div>
+
+            <div class="mt-5">
+
+              <h2 class="text-[36px] font-medium">
+                Рисунок
+              </h2>
+
+              <p class="text-gray-500 text-[26px] mt-2">
+                Начальная стоимость
+              </p>
+
+              <div class="text-[32px] font-semibold mt-3">
+                от 500₽
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- VECTOR -->
+
+      <img src="images/vector-pattern-bg1.png.png" class="vector top-[300px] left-[-80px] w-[450px] opacity-60">
+
+      <img src="images/vector-pattern-bg6.png.png" class="vector top-[650px] right-0 w-[850px] opacity-40">
+
+      <!-- BUTTON -->
+
+      <a href="order.html" class="main-btn w-full h-[70px] rounded-xl text-white text-[30px] font-bold mt-16 shadow-lg flex items-center justify-center">
+        Выбрать услугу
+      </a>
+
+    </section>
+
+    <!-- ADDITIONAL -->
+
+    <section class="content mt-40 px-20 relative">
+
+      <h2 class="font-['Caveat'] text-[#8A2E2E] text-[100px] text-center font-bold">
+        Дополнительные услуги
+      </h2>
+
+      <!-- SERVICES GRID -->
+
+      <div class="grid grid-cols-2 gap-x-20 gap-y-16 mt-20">
+
+        <!-- ITEM -->
+
+        <div>
+
+          <div class="bg-[#AAB06E] rounded-xl px-8 py-8 flex items-center gap-5 shadow-card">
+
+            <img src="images/🦆 icon _globe_.png" class="w-8">
+
+            <div class="text-white text-[32px] font-medium">
+              Подготовка макета к печати
+            </div>
+
+          </div>
+
+          <p class="text-gray-500 text-[28px] mt-5">
+            Создание макета под печать в типографии
+          </p>
+
+          <div class="text-[32px] font-semibold mt-5">
+            от 1500₽
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+
+        <div>
+
+          <div class="bg-[#AAB06E] rounded-xl px-8 py-8 flex items-center gap-5 shadow-card">
+
+            <img src="images/🦆 icon _avatar_.png" class="w-8">
+
+            <div class="text-white text-[32px] font-medium">
+              Авторское право
+            </div>
+
+          </div>
+
+          <p class="text-gray-500 text-[28px] mt-5">
+            Выкуп авторского права на изображение
+          </p>
+
+          <div class="text-[32px] font-semibold mt-5">
+            от 1000₽
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+
+        <div>
+
+          <div class="bg-[#AAB06E] rounded-xl px-8 py-8 flex items-center gap-5 shadow-card">
+
+            <img src="images/Frame 1321316141.png" class="w-8">
+
+            <div class="text-white text-[32px] font-medium">
+              Патент
+            </div>
+
+          </div>
+
+          <p class="text-gray-500 text-[28px] mt-5">
+            Патент на работу
+          </p>
+
+          <div class="text-[32px] font-semibold mt-5">
+            Цена договорная
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+
+        <div>
+
+          <div class="bg-[#AAB06E] rounded-xl px-8 py-8 flex items-center gap-5 shadow-card">
+
+            <img src="images/🦆 icon _calendar_.png" class="w-8">
+
+            <div class="text-white text-[32px] font-medium">
+              Срочный заказ
+            </div>
+
+          </div>
+
+          <p class="text-gray-500 text-[28px] mt-5">
+            От 4 часов
+          </p>
+
+          <div class="text-[32px] font-semibold mt-5">
+            1000₽
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROMO -->
+
+    <section class="mt-32 h-[100px] bg-[#8A2E2E] overflow-hidden flex items-center">
+
+      <div class="promo flex gap-20 whitespace-nowrap">
+
+        <div class="text-[#DCDCDC] text-[48px] font-bold">
+          СКИДКИ НА БОЛЬШИЕ ЗАКАЗЫ
+        </div>
+
+        <div class="text-[#DCDCDC] text-[48px] font-bold">
+          СКИДКИ НА БОЛЬШИЕ ЗАКАЗЫ
+        </div>
+
+        <div class="text-[#DCDCDC] text-[48px] font-bold">
+          СКИДКИ НА БОЛЬШИЕ ЗАКАЗЫ
+        </div>
+
+        <div class="text-[#DCDCDC] text-[48px] font-bold">
+          СКИДКИ НА БОЛЬШИЕ ЗАКАЗЫ
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-[#967E64] px-20 py-16 flex justify-between">
+
+      <!-- LEFT -->
+
+      <div>
+
+        <div class="text-white text-[42px] font-extrabold">
+          ART<span class="font-medium">WISH</span>
+        </div>
+
+        <img src="images/Social Icons.png" class="w-[180px] mt-12">
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="flex gap-32">
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6 text-xl">
+            Категории
+          </h3>
+
+          <div class="flex flex-col gap-5 text-[#444] text-lg">
+
+            <a href="portfolio-graphics.html">Рисунок</a>
+            <a href="portfolio-digital.html">Диджитал</a>
+            <a href="portfolio-painting.html">Живопись</a>
+
+          </div>
+
+        </div>
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6 text-xl">
+            Портфолио
+          </h3>
+
+          <div class="flex flex-col gap-5 text-[#444] text-lg">
+
+            <a href="portfolio-graphics.html">Рисунок</a>
+            <a href="portfolio-digital.html">Диджитал</a>
+            <a href="portfolio-painting.html">Живопись</a>
+
+          </div>
+
+        </div>
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6 text-xl">
+            О нас
+          </h3>
+
+          <div class="flex flex-col gap-5 text-[#444] text-lg">
+
+            <a href="about.html">Частые вопросы</a>
+            <a href="about.html">Правила соглашения</a>
+            <a href="about.html">Контакты</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

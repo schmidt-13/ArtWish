@@ -1,0 +1,726 @@
+/* =========================================
+   ARTWISH — GLOBAL STYLE.CSS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#E7E1DB;
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+  color:#000;
+}
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+  font-family:'Inter',sans-serif;
+}
+
+.page{
+  width:100%;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+header{
+  width:100%;
+  height:115px;
+  background:#A2AB6D;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 80px;
+  position:relative;
+  z-index:50;
+}
+
+.logo{
+  color:#fff;
+  font-size:34px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+
+nav a{
+  font-size:22px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  opacity:0.7;
+}
+
+.header-btn{
+  background:#972E2E;
+  color:white;
+  padding:18px 30px;
+  border-radius:10px;
+  font-size:20px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.header-btn:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+  width:100%;
+  padding:90px 80px 120px;
+  position:relative;
+}
+
+.hero-title{
+  font-family:'Caveat',cursive;
+  font-size:110px;
+  line-height:1;
+  margin-bottom:40px;
+  position:relative;
+  z-index:2;
+}
+
+.hero-text{
+  font-size:30px;
+  line-height:1.6;
+  max-width:700px;
+  position:relative;
+  z-index:2;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.main-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:72px;
+  padding:0 40px;
+  border-radius:10px;
+  background:linear-gradient(
+    90deg,
+    #972E2E 0%,
+    #E2C76F 100%
+  );
+  color:white;
+  font-size:28px;
+  font-weight:700;
+  transition:0.3s;
+  margin-top:35px;
+}
+
+.main-btn:hover{
+  transform:translateY(-3px);
+  opacity:0.92;
+}
+
+.green-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:72px;
+  padding:0 40px;
+  border-radius:10px;
+  background:linear-gradient(
+    90deg,
+    #6A7422 0%,
+    #E2C76F 100%
+  );
+  color:white;
+  font-size:28px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.green-btn:hover{
+  transform:translateY(-3px);
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards{
+  display:flex;
+  gap:35px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#F7F7F7;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 0 25px rgba(0,0,0,0.12);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+}
+
+.card-title{
+  padding:25px;
+  text-align:center;
+  font-size:34px;
+  font-weight:300;
+}
+
+/* =========================================
+   PORTFOLIO
+========================================= */
+
+.portfolio-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:35px;
+  margin-top:70px;
+}
+
+.portfolio-item{
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.portfolio-item:hover{
+  transform:translateY(-8px);
+}
+
+.portfolio-item img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-content{
+  display:flex;
+  justify-content:space-between;
+  gap:70px;
+  align-items:flex-start;
+}
+
+.about-text{
+  width:48%;
+}
+
+.about-text h1{
+  font-size:96px;
+  font-weight:800;
+  margin-bottom:45px;
+}
+
+.about-text p{
+  font-size:30px;
+  line-height:1.6;
+  margin-bottom:35px;
+}
+
+.about-image{
+  width:48%;
+  height:760px;
+  overflow:hidden;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.about-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-section{
+  width:100%;
+  margin-top:90px;
+}
+
+.form-title{
+  width:720px;
+  height:90px;
+  border-radius:10px;
+  background:linear-gradient(
+    90deg,
+    #E2C76F 0%,
+    #6B7422 100%
+  );
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:40px;
+  font-weight:700;
+  margin-bottom:45px;
+}
+
+.contact-form{
+  width:720px;
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+}
+
+.row{
+  display:flex;
+  gap:30px;
+}
+
+.input-group{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  background:#E2C76F;
+  padding:12px;
+  text-align:center;
+  font-size:22px;
+  font-weight:600;
+  border-radius:8px 8px 0 0;
+}
+
+.input-group input{
+  height:70px;
+  border:none;
+  outline:none;
+  background:#F7F7F7;
+  padding:0 20px;
+  font-size:20px;
+  border-radius:0 0 8px 8px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.input-group textarea{
+  height:220px;
+  resize:none;
+  border:none;
+  outline:none;
+  background:#F7F7F7;
+  padding:20px;
+  font-size:20px;
+  border-radius:0 0 8px 8px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.submit-btn{
+  width:100%;
+  height:78px;
+  border-radius:10px;
+  background:#972E2E;
+  color:white;
+  font-size:30px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.submit-btn:hover{
+  transform:translateY(-3px);
+  opacity:0.92;
+}
+
+/* =========================================
+   REVIEWS
+========================================= */
+
+.reviews{
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-top:70px;
+}
+
+.review-card{
+  width:400px;
+  background:#EDD287;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
+
+.review-card p{
+  font-size:24px;
+  line-height:1.6;
+  margin-bottom:30px;
+}
+
+.review-user{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.review-user img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+
+.review-name{
+  font-size:18px;
+  font-weight:600;
+}
+
+/* =========================================
+   PROMO LINE
+========================================= */
+
+.promo{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  background:#972E2E;
+  overflow:hidden;
+  white-space:nowrap;
+  padding:25px 0;
+  margin-top:100px;
+  position:relative;
+}
+
+.promo-track{
+  display:flex;
+  gap:100px;
+  width:max-content;
+  animation:promoMove 18s linear infinite;
+}
+
+.promo span{
+  color:#DCDCDC;
+  font-size:56px;
+  font-weight:700;
+}
+
+@keyframes promoMove{
+
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  width:100%;
+  background:#9A8167;
+  padding:80px;
+  position:relative;
+}
+
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:60px;
+}
+
+.footer-logo{
+  color:white;
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:35px;
+}
+
+.socials{
+  display:flex;
+  gap:18px;
+}
+
+.socials img{
+  width:28px;
+  height:28px;
+}
+
+.footer-column{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.footer-column h3{
+  color:black;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.footer-column a{
+  color:#444;
+  font-size:20px;
+}
+
+/* =========================================
+   DECORATIVE VECTORS
+========================================= */
+
+.vector-top{
+  position:absolute;
+  top:-120px;
+  left:-120px;
+  width:950px;
+  opacity:0.2;
+  z-index:0;
+}
+
+.vector-right{
+  position:absolute;
+  right:-150px;
+  top:300px;
+  width:760px;
+  opacity:0.9;
+  z-index:0;
+}
+
+.vector-left{
+  position:absolute;
+  left:-120px;
+  top:700px;
+  width:400px;
+  opacity:0.7;
+  z-index:0;
+}
+
+.vector-bottom{
+  position:absolute;
+  left:-70px;
+  bottom:120px;
+  width:500px;
+  opacity:0.5;
+  z-index:0;
+}
+
+/* =========================================
+   SECTION TITLES
+========================================= */
+
+.section-title{
+  text-align:center;
+  font-size:90px;
+  font-weight:800;
+  margin-bottom:30px;
+}
+
+.section-subtitle{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:60px;
+}
+
+/* =========================================
+   ORDER PAGE
+========================================= */
+
+.order-layout{
+  display:flex;
+  justify-content:space-between;
+  gap:70px;
+  align-items:flex-start;
+}
+
+.order-form{
+  width:52%;
+}
+
+.order-image{
+  width:44%;
+}
+
+.order-image img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* =========================================
+   CONTACTS
+========================================= */
+
+.contacts{
+  width:100%;
+  text-align:center;
+  margin-top:100px;
+}
+
+.contacts h2{
+  font-size:70px;
+  margin-bottom:45px;
+}
+
+.contacts p{
+  font-size:32px;
+  line-height:2;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1200px){
+
+  header{
+    padding:0 30px;
+  }
+
+  .hero{
+    padding:70px 30px 100px;
+  }
+
+  footer{
+    padding:60px 30px;
+  }
+
+  .hero-title{
+    font-size:72px;
+  }
+
+  .hero-text{
+    font-size:24px;
+  }
+
+  .portfolio-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-content,
+  .order-layout{
+    flex-direction:column;
+  }
+
+  .about-text,
+  .about-image,
+  .order-form,
+  .order-image{
+    width:100%;
+  }
+
+  .about-image{
+    height:600px;
+  }
+
+  .form-title,
+  .contact-form{
+    width:100%;
+  }
+
+  .row{
+    flex-direction:column;
+  }
+
+  .cards{
+    flex-direction:column;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  .contacts h2{
+    font-size:48px;
+  }
+
+  .contacts p{
+    font-size:24px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  header{
+    height:auto;
+    padding:25px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+  }
+
+  .hero-title{
+    font-size:58px;
+  }
+
+  .section-title{
+    font-size:60px;
+  }
+
+  .about-text h1{
+    font-size:64px;
+  }
+
+  .promo span{
+    font-size:38px;
+  }
+
+  .footer-content{
+    flex-direction:column;
+  }
+
+}

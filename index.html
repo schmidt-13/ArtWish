@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ARTWISH</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #E7E1DB;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+ .container-main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+    .card-shadow {
+      box-shadow: 0 0 30px rgba(88, 77, 65, 0.35);
+    }
+
+    .main-btn {
+      background: linear-gradient(90deg, #8A2E2E 0%, #EDD287 100%);
+    }
+
+    .green-btn {
+      background: linear-gradient(90deg, #626B25 0%, #EDD287 100%);
+    }
+
+    .review-card {
+      background: #EDD287;
+      box-shadow: 0 0 30px rgba(88, 77, 65, 0.25);
+    }
+
+    .vector {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-main min-h-screen">
+
+    <!-- HEADER -->
+
+    <header class="w-full h-[110px] bg-[#9FA66B] flex items-center justify-between px-20 relative z-50">
+
+      <div class="text-white text-[32px] font-extrabold">
+        ART<span class="font-medium">WISH</span>
+      </div>
+
+      <div class="flex items-center gap-10">
+
+        <a href="about.html" class="text-black text-xl">
+          О нас
+        </a>
+
+        <a href="services.html" class="text-black text-xl">
+          Портфолио
+        </a>
+
+        <a href="services.html" class="bg-[#8A2E2E] text-white px-6 py-3 rounded-xl text-2xl font-bold shadow-lg hover:opacity-90 transition">
+          Выбрать услугу
+        </a>
+
+      </div>
+
+    </header>
+
+    <!-- VECTORS -->
+
+    <img src="images/vector-pattern-bg1.png.png" class="vector top-[50px] left-0 w-[450px] opacity-50">
+
+    <img src="images/vector-pattern-bg2.png.png" class="vector top-0 left-0 w-[700px] opacity-40">
+
+    <img src="images/vector-pattern-bg2.png.png" class="vector top-[120px] left-[710px] w-[390px] opacity-40">
+
+    <!-- HERO -->
+
+    <section class="content px-20 pt-20 relative">
+
+      <div class="flex justify-between items-start">
+
+        <!-- LEFT -->
+
+        <div class="w-[620px] pt-10">
+
+          <h1 class="font-['Caveat'] text-[88px] leading-none font-bold text-black">
+            Рисование на заказ
+          </h1>
+
+          <p class="mt-10 text-[28px] leading-[38px] text-black">
+            Здравствуйте, Вас приветствует наша команда!
+            <br><br>
+            Мы создаем уникальные и персонализированные произведения искусства на заказ.
+            <br><br>
+            Ваш идеальный рисунок - всего в одном клике!
+          </p>
+
+          <a href="order.html" class="main-btn mt-10 w-[620px] h-[70px] rounded-xl text-white text-[30px] font-bold shadow-lg flex items-center justify-center">
+            Хочу рисунок!
+          </a>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="relative">
+
+          <img src="images/мольберт.png" class="w-[760px] relative z-10">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="content mt-20 px-20">
+
+      <h2 class="text-center text-[72px] font-light text-black">
+        Выбор услуг
+      </h2>
+
+      <p class="text-center text-2xl font-bold mt-5">
+        Мы предлагаем воплотить Вашу идею через такие виды рисунков, как:
+      </p>
+
+      <div class="grid grid-cols-3 gap-8 mt-14">
+
+        <!-- CARD -->
+
+        <div class="bg-[#F7F7F7] rounded-[20px] overflow-hidden card-shadow">
+
+          <img src="images/Image-2.png" class="w-full h-[405px] object-cover">
+
+          <div class="py-6 text-center text-[38px] font-light">
+            Рисунок
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="bg-[#F7F7F7] rounded-[20px] overflow-hidden card-shadow">
+
+          <img src="images/Image-3.png" class="w-full h-[405px] object-cover">
+
+          <div class="py-6 text-center text-[38px] font-light">
+            Диджитал
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="bg-[#F7F7F7] rounded-[20px] overflow-hidden card-shadow">
+
+          <img src="images/Image-4.png" class="w-full h-[405px] object-cover">
+
+          <div class="py-6 text-center text-[38px] font-light">
+            Живопись
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- WHY US -->
+
+    <section class="content relative mt-40 px-20">
+
+      <img src="images/—Pngtree—red paint smear on white_23759478 2.png" class="absolute top-[-180px] left-[-40px] w-[900px] z-0">
+
+      <div class="relative z-10 flex justify-between items-start gap-10">
+
+        <!-- TEXT -->
+
+        <div class="w-[620px]">
+
+          <div class="relative">
+
+            <h2 class="font-['Caveat'] text-white text-[120px] absolute top-[-80px] left-0 rotate-[-5deg]">
+              Почему МЫ!?
+            </h2>
+
+          </div>
+
+          <div class="mt-44 text-2xl font-bold leading-[34px] text-black">
+
+            Мы предлагаем разнообразные виды рисунков!
+            <br><br>
+
+            Сроки выполнения зависят от сложности работы,
+            но мы всегда стремимся завершить заказ в кратчайшие сроки!
+            <br><br>
+
+            Стоимость наших услуг варьируется в зависимости от объема и сложности Вашего проекта!
+            <br><br>
+
+            Всегда открыты к интересным идеям, чтобы воплотить Вашу задумку с креативом!
+            <br><br>
+
+            Рады каждому клиенту!
+
+          </div>
+
+          <a href="order.html" class="green-btn mt-10 w-[620px] h-[70px] rounded-xl text-white text-[30px] font-bold shadow-lg flex items-center justify-center">
+            Хочу рисунок!
+          </a>
+
+        </div>
+
+        <!-- IMAGE -->
+
+        <img src="images/Image-5.png" class="w-[700px] rounded-[10px]">
+
+      </div>
+
+    </section>
+
+    <!-- REVIEWS -->
+
+    <section class="content mt-40 px-20 relative">
+
+      <img src="images/png-transparent-palette-painting-art-color-painting-watercolor-painting-color-painting (1) 1.png" class="absolute top-[-20px] left-[-20px] w-[500px] opacity-90">
+
+      <h2 class="text-center font-['Caveat'] text-[120px] font-bold bg-gradient-to-r from-[#8A2E2E] to-[#AF752E] text-transparent bg-clip-text">
+        Отзывы
+      </h2>
+
+      <div class="grid grid-cols-3 gap-8 mt-16">
+
+        <!-- REVIEW -->
+
+        <div class="review-card rounded-2xl p-8 min-h-[500px] flex flex-col justify-between">
+
+          <p class="text-2xl leading-[38px]">
+            Искал художника в стиле фурри.
+            Этот сайт посоветовал друг.
+            Очень понравилась анатомия и динамика:
+            персонаж живой, а не статичный.
+            Цены адекватные, а главное —
+            правки вносились быстро и по делу.
+          </p>
+
+          <div class="flex items-center gap-4 mt-10">
+
+            <img src="images/Avatar.png" class="w-12 h-12 rounded-full">
+
+            <div>
+              <div class="font-medium">
+                Name
+              </div>
+
+              <div class="text-gray-500 text-sm">
+                Description
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- REVIEW -->
+
+        <div class="review-card rounded-2xl p-8 min-h-[500px] flex flex-col justify-between">
+
+          <div class="flex items-center gap-4">
+
+            <img src="images/Avatar2.png" class="w-12 h-12 rounded-full">
+
+            <div>
+              <div class="font-medium">
+                Name
+              </div>
+
+              <div class="text-gray-500 text-sm">
+                Description
+              </div>
+            </div>
+
+          </div>
+
+          <p class="text-2xl leading-[38px] mt-10">
+            Делала сюрприз для мамы с папой
+            на 30-летие свадьбы.
+            Художник учел все пожелания по цветам и фону.
+            Родители не могли поверить,
+            что это нарисовано с их старой фотографии.
+            Очень качественная работа,
+            буду заказывать еще.
+          </p>
+
+        </div>
+
+        <!-- REVIEW -->
+
+        <div class="review-card rounded-2xl p-8 min-h-[500px] flex flex-col justify-between">
+
+          <p class="text-2xl leading-[38px]">
+            Понадобились авторские иллюстрации
+            для презентации.
+            Сделали очень быстро (за 2 дня)
+            и ровно в цветах нашего брендбука.
+            Спасибо за пунктуальность
+            и понимание техзадания!
+          </p>
+
+          <div class="flex items-center gap-4 mt-10">
+
+            <img src="images/Avatar3.png" class="w-12 h-12 rounded-full">
+
+            <div>
+              <div class="font-medium">
+                Name
+              </div>
+
+              <div class="text-gray-500 text-sm">
+                Description
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="text-center text-[30px] mt-12">
+        Мы ценим Ваше мнение и благодарим за то, что выбираете нас!
+      </p>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="mt-32 bg-[#9FA66B] h-[240px] flex items-center justify-between px-20 relative">
+
+      <h2 class="text-white text-[58px] font-semibold">
+        Закажи прямо сейчас!
+      </h2>
+
+      <a href="services.html" class="bg-[#E8EAD2] px-10 py-5 rounded-xl text-[30px] text-black shadow-lg">
+        Выбрать услугу
+      </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-[#967E64] px-20 py-16 flex justify-between">
+
+      <!-- LEFT -->
+
+      <div>
+
+        <div class="text-white text-[42px] font-extrabold">
+          ART<span class="font-medium">WISH</span>
+        </div>
+
+        <img src="images/Social Icons.png" class="w-[180px] mt-12">
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="flex gap-32">
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6">
+            Категории
+          </h3>
+
+          <div class="flex flex-col gap-4 text-[#444]">
+
+            <a href="portfolio-graphics.html">Рисунок</a>
+            <a href="portfolio-digital.html">Диджитал</a>
+            <a href="portfolio-painting.html">Живопись</a>
+
+          </div>
+
+        </div>
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6">
+            Портфолио
+          </h3>
+
+          <div class="flex flex-col gap-4 text-[#444]">
+
+            <a href="portfolio-graphics.html">Рисунок</a>
+            <a href="portfolio-digital.html">Диджитал</a>
+            <a href="portfolio-painting.html">Живопись</a>
+
+          </div>
+
+        </div>
+
+        <!-- COLUMN -->
+
+        <div>
+
+          <h3 class="font-semibold text-black mb-6">
+            О нас
+          </h3>
+
+          <div class="flex flex-col gap-4 text-[#444]">
+
+            <a href="about.html">Частые вопросы</a>
+            <a href="about.html">Правила соглашения</a>
+            <a href="about.html">Контакты</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
